@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Graphing Calculator</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.2.1/math.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <style>
+            html, body {
+                margin: 0 !important;
+                padding: 0 !important;
+                overflow: hidden;
+            }
+            canvas{
+                position:fixed;
+                top: 0;
+                left: 0;
+                outline:none;
+            }
+            .flex-container {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                left:0%;
+                width:20%;
+            }
+
+            .flex-container > div {
+                display: flex;
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+            .mathInput{
+                display: inline-block;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+            }
+        </style>
+        <canvas id="graph" style="border:1px solid #000000;"></canvas>
+        <div id = "mathInputContainer" class="flex-container">
+        </div>
+        <script src="grapher.js"> </script>
+    </body>
+</html>
